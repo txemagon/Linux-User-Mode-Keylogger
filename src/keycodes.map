@@ -1,0 +1,143 @@
+<ESC>
+1, !, |, ¡
+2, ", @, ⅛
+3, ·, #, £
+4, $, ~, -
+5, %, ½, ⅜
+6, &, ¬, ⅝
+7, /, {, ⅞
+8, (, [, ™
+9, ), ], ±
+0, =, }, °
+', ?, \, ¿
+¡, ¿, ~, ~
+<DEL>
+<TAB>
+q, Q, @, Ω
+w, W, ł, Ł
+e, E, €, ¢
+r, R, ¶, ®
+t, T, ŧ, Ŧ
+y, Y, ←, ¥
+u, U, ↓, ↑
+i, I, →, ı
+o, O, ø, Ø
+p, P, þ, Þ
+`, ^, [, °
++, *, ], ¯
+<ENTER>
+<CTRL_L>
+a, A, æ, Æ
+s, S, ß, §
+d, D, ð, Ð
+f, F, đ, ª
+g, G, ŋ, Ŋ
+h, H, ħ, Ħ
+j, J, j, J
+k, K, ĸ, &
+l, L, ł, Ł
+ñ, Ñ, ~, ˝
+', ', {, {
+º, Ç, }, ˘
+<SHIFT_L>
+ç, Ç, }, ˘
+z, Z, «, <
+x, X, », >
+c, C, ¢, ©
+v, V, “, ‘
+b, B, ”, ’
+n, N, n, N
+m, M, µ, º
+<COMMA>, ;, NUL, ×
+., :, ·, ÷
+-, _, NUL, ˙
+<SHIFT_R>
+NUL
+<ALT>
+<SPACE>
+<BLOQ_MAYS>
+<F1>
+<F2>
+<F3>
+<F4>
+<F5>
+<F6>
+<F7>
+<F8>
+<F9>
+<F10>
+NUL
+<DESPL>
+NUL
+NUL
+NUL
+NUL
+NUL
+NUL
+NUL
+NUL
+NUL
+NUL
+NUL
+NUL
+NUL
+NUL
+NUL
+<, >, |, ¦
+<F11>
+<F12>
+NUL
+NUL
+NUL
+NUL
+NUL
+NUL
+NUL
+NUL
+<CTRL_R>
+NUL
+NUL
+<ALT_GR>
+NUL
+NUL
+<UP>
+NUL
+<LEFT>
+<RIGHT>
+NUL
+<DOWN>
+NUL
+NUL
+<SUPR>
+
+# No comments allowed before this line. Keep the empty line before (no whitespaces allowed)
+# Format is ASCII CHAR, SHIFTed CHAR, ALT GRed CHAR, (SHIFT + ALT GR)ed CHAR
+# Cols numbering: 0, 1, 2, 3
+# Ensure to begin mapping on line 1, then you'd be able to directly read the 
+# keycode from the line number.
+# Use <COMMA> instead of a , because is the separator mark.
+
+# BLOQ_MAYS only affects letters:
+
+Lqwertyuiopasdfghjklñçzxcvbnm
+
+# Composition format is:
+# <keycode>, <printable character>
+#  <KBD_STATE>:<normal char>[, < SHIFT + normal char>]
+#
+# KBD_STATE: 5bits number BLOQ_MAYS(msb), CTRL, ALT, ALT_GR, SHIFT(lsb)
+
+# [compositions]
+(26) # ` 
+  0:a-à-À,e-è-È,i-ì-Ì,o-ò-Ò,u-ù-Ù, -`-`
+  1:a-â-Â,e-ê-Ê,i-î-Î,o-ô-Ô,u-û-Û, -^-^
+  3:a-å-Å,u-ů-Ů, -°
+(27) # +
+  3:a-ā-Ā,e-ē-Ē,i-ī-Ī,o-ō-Ō,u-ū-Ū, -¯-¯
+(40) # '                               
+  0:a-á-Á,e-é-É,i-í-Í,o-ó-Ó,u-ú-Ú, -'-'
+  1:a-ä-Ä,e-ë-Ë,i-ï-Ï,o-ö-Ö,u-ü-ü, -"-"
+(43) # ç                               
+  3:a-ā-Ā,e-ē-Ē,i-ī-Ī,o-ō-Ō,u-ū-Ū, -¯-¯
+(53) # -
+  3:a-ȧ-Ȧ,e-ė-Ė,i-ı-İ,o-ȯ-Ȯ, -˙-˙
